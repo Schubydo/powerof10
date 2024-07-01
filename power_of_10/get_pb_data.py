@@ -22,7 +22,7 @@ def get_ids(firstname=None, surname=None, club=None):
     if club is not None:
         url += f'club={club.replace(" ","+")}'
 
-    if firstname is None, surname is None, and club is None:
+    if firstname is None and surname is None and club is None:
         raise QueryError('Please input a firstname, surname or club')
     
     html = requests.get(url)

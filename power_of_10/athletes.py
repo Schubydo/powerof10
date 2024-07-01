@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from exceptions import BroadQueryError, QueryError
 
-
 def search_athletes(firstname=None, surname=None, club=None):
     '''
     Returns a list of athletes with the inputted firstname, surname or club.
